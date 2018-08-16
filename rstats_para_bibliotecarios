@@ -1,17 +1,29 @@
 # Primeros pasos en R
 
-### Riva Quiroga
+### por Silvia Gutiérrez y Rodrigo Cuéllar
 
 
-> ¡Hola! Este tutorial toma como base el taller de introducción a R que realizé para [RLadies Santiago](https://meetup.com/rladies-scl). Su objetivo es acompañar a principiantes en el proceso que va desde la instalación de R a la manipulación inicial de datos. La idea es que sea algo práctico, y a la vez suficientemente explicativo como para que se entienda qué es lo que hace cada bloque de código. El tutorial contiene imágenes, con el fin de ir ilustrando el proceso tal como debieses verlo en tu computador. Puede que se vean un poco pequeñas si abres esta página desde tu teléfono móvil.
-Si te pareció útil, tienes algún comentario o una petición de tema para un futuro tutorial, [puedes contactarme por acá.](https://twitter.com/rivaquiroga)
+> ¡Hola! Este tutorial toma como base el taller de [Riva Quiroga](https://twitter.com/rivaquiroga) y el de Mariana Carmona/Godina. Su objetivo es acompañar a bibliotecarios que apenas empiezan en el mundo de la manipulación de datos apoyándonos en un ejercicio que tiene como base datos del trabajo concreto de su quehacer.
 
 _________
 
 
-## Instalación de R y RStudio
+## Seis preguntas para entender qué es R
 
-En este tutorial utilizaremos R a través del IDE RStudio. ¿Qué es un IDE? IDE es el acrónimo de *Integrated Development Environment* (*Entorno de Desarrollo Integrado*). Esto quiere decir que RStudio es una aplicación que nos entrega herramientas para hacer más fácil el desarrollo de proyectos usando R.
+### ¿Qué es R?
+R: R es un lenguaje de programación estadístico. Facilita la manipulación de los datos, la simulación de eventos y la generación de gráficos, entre un sin fin de aplicaciones.
+### ¿Qué es RStudio?
+R: Aunque R lo puedes usar directo desde la terminal (es decir como que si pudieras hablar directo con la computadora); existe una interfaz (RStudio) que facilita muchísimo su uso y es por eso que vamos a aprender a usarla.
+Estas interfaces se llaman IDEs, es decir, es una *Integrated Development Environment* (*Entorno de Desarrollo Integrado*).
+###  ¿Qué son las cuatro ventanas que ves cuando abres RStudio?
+
+![Consola de RStudio tomada de "20 funciones para perderle el miedo a R"](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Consola de RStudio")
+
+
+¿Por qué hay un hashtag antes de cada oración?
+# R usa el signo # para añadir comentarios, para que tú y otros puedan enteder de qué se trata el código. Los comentarios son texto que no se considera código, por lo tanto no tendrán influencia en tus operaciones.
+
+
 
 Para poder instalar R y RStudio, sigue los siguientes pasos:
 
