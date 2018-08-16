@@ -1,6 +1,24 @@
-# TERCER MEETUP DE @RladiesSantiago 
-# Taller de introducción al tidyverse a cargo de @rivaquiroga
+# Primer taller de R en BibliColmex
+# Taller de introducción al tidyverse a cargo de @espejolento y Rodrigo Cuéllar
 
+
+### PRIMER RECORRIDO:
+# ¿Por qué hay un hashtag antes este texto?
+# R usa el signo # para añadir comentarios, para que tú y otros puedan enteder de qué se trata el código. Los comentarios son texto que no se considera código, por lo tanto no tendrán influencia en tus operaciones.
+
+
+
+
+## Obtener directorio donde se encuentra uno
+getwd()
+
+## Cambiar directorio al espacio donde está el set de datos
+setwd("/home/luba/Documents")
+
+## CARGAR SET DE DATOS
+# sep significa el separador de los datos, que en este caso son comas
+# header = TRUE lo ponemos por 
+cedua <- read.table('CEDUA.csv', sep = ',', header = TRUE, fill=TRUE, encoding = "UTF-8", stringsAsFactors=FALSE)
 
 
 
@@ -8,23 +26,26 @@
 # Cada vez que iniciamos una sesión tenemos que indicarle a R qué paquetes vamos a utilizar
 
 library(tidyverse) # aquí estamos llamando a todos los paquetes que lo conforman. Nosotras trabajaremos específicamente con tres: dplyr, ggplot y readr. 
-library(gapminder) 
+ 
 
 # MIRADA INICIAL A LOS DATOS
 
 gapminder # el paquete que descargamos contiene un objeto con la base de datos. Al escribir su nombre se imprimen las 10 primeras líneas y la cantidad de columnas qu caben en el ancho de página.
-View(gapminder) # muestra la base completa en otra pestaña
-str(gapminder) # imprime información sobre el dataset y las variables
-glimpse(gapminder) # imprime las primeras observaciones de cada variable
-head(gapminder) # imprime las seis primeras líneas
-tail(gapminder) # imprime las últimas seis líneas (muy útil para chequear si la base que cargamos está completa)
+View(cedua) # muestra la base completa en otra pestaña
+str(cedua) # imprime información sobre el dataset y las variables
+glimpse(cedua) # imprime las primeras observaciones de cada variable
+head(cedua) # imprime las seis primeras líneas
+tail(cedua) # imprime las últimas seis líneas (muy útil para chequear si la base que cargamos está completa)
 
 
 #COMPARAR CÓDIGOS: tidyverse / R base
 
-# Imagina que queremos saber cuánto fue el PIB de los países de Asia en el 2007.  
+
+### A PARTIR DE AQUÍ TODAVÍA NO EDITO RO...
+
+# Imagina que queremos saber las citas de los textos escritos en 2007 y publicados en México
 # En R base lo podríamos averiguar así: 
-sum(select(filter(gapminder, year == 2007, continent == "Asia"), gdpPercap)) # el código se entiende desde adentro hacia afuera. 
+sum(select(filter(cedua, year == 2007, country == "México"), gdpPercap)) 
 
 # Tidyverse: el código funciona como leemos: de izquierda a derecha y de arriba hacia abajo. Para ello, se utiliza el operador ' %>% ', que en inglés se llama "pipe" y se puede leer como "luego" o "a continuación".
 
