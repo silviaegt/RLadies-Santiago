@@ -17,7 +17,7 @@ R: Aunque R lo puedes usar directo desde la terminal (es decir como que si pudie
 Estas interfaces se llaman IDEs, es decir, es una *Integrated Development Environment* (*Entorno de Desarrollo Integrado*).
 ###  ¿Qué son las cuatro ventanas que ves cuando abres RStudio?
 
-![Consola de RStudio tomada de "20 funciones para perderle el miedo a R"](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Consola de RStudio")
+![Consola de RStudio tomada de "20 funciones para perderle el miedo a R"](imagenes/consola.png "Consola de RStudio")
 
 
 ¿Por qué hay un hashtag antes de cada oración?
